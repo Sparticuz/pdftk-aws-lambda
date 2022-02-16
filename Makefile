@@ -8,6 +8,6 @@ clean:
 
 build: clean
 	mkdir -p ./bin
-	wget https://gitlab.com/pdftk-java/pdftk/-/jobs/1527259632/artifacts/raw/build/native-image/pdftk -O bin/pdftk
+	wget https://gitlab.com/api/v4/projects/5024297/packages/generic/pdftk-java/v3.3.2/pdftk -O bin/pdftk
 	chmod +x ./bin/pdftk
 	@zip -9 --filesync --recurse-paths pdftk-aws-lambda.zip bin/
